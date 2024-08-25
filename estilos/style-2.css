@@ -1,0 +1,162 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor-1: #9C6EFF;
+    --cor-2: #815BD4;
+    --cor-3: #6D4CB0;
+    --cor-4: #422D6B;
+
+    --font-destaque: 'New Amsterdam', sans-serif;
+    --font-segundaria: 'Oswald', sans-serif;
+    --font-normal: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--cor-1);
+    font-family: var(--font-normal);
+    text-align: justify;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor-1), var(--cor-2), var(--cor-4));
+    text-align: center;
+    color: wheat;
+}
+
+ header > img {
+    width: 80px;
+    padding: 10px;
+}
+
+nav {
+    font-weight: bold;
+    background-color: #422d6b;
+    text-align: center;
+    min-height: 5vh;
+    padding: 5px;
+}
+
+nav > a {
+    text-decoration: none;
+    background-color: #892be267;
+    color: white;
+    display: inline-block;
+    border-radius: 7px;
+    padding: 8px;
+    margin: 5px;
+}
+
+nav > a:hover {
+    color: #c527ff;
+    background-color: #c527ff3d;
+    transition: 0.5s;
+}
+
+main {
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 800px;
+    min-height: 400px;
+    padding: 15px;
+    margin: auto;
+}
+
+section > p {
+    font-size: 17px;
+    text-indent: 30px;
+    line-height: 1.3em;
+    padding: 5px;
+}
+
+section > h1 {
+    text-align: center;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 3.5em;
+}
+
+section > img {
+    display: block;
+    width: 250px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+section > h2 {
+    background-image: linear-gradient(to right, #000000be, transparent);
+    color: white;
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    border-radius: 5px;
+    font-size: 2em;
+    text-indent: 15px;
+    margin: 5px;
+}
+
+div.video {
+    position: relative;
+    background-color: var(--cor-4);
+    height: 0%;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 20px;
+    padding-bottom: 55%;
+}
+
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+a.link1 {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -20px;
+    font-size: 1.2em;
+    background-color: var(--cor-4);
+    color: white;
+}
+
+a.link1:hover {
+    color: var(--cor-1);
+    transition: 0.8s;
+}
+
+.strong1 {
+    color: var(--cor-1);
+}
+
+a.link2 {
+    text-decoration: none;
+    background-color: #8e67e254;
+}
+
+a.link2:hover {
+    color: var(--cor-1);
+    transition: 0.8s;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
